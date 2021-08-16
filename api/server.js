@@ -1,9 +1,17 @@
-const express = require('express');
-const server = express();
+const dotenv = require('dotenv').config
+const express = require('express')
+const cors = require('cors')
+const helmet = require('helmet')
+const actionsRouter = require('./actions/actions-router.js')
+// const projectsRouter = require('./projects/projects-router.js')
 
-// Configure your server here
-// Build your actions router in /api/actions/actions-router.js
-// Build your projects router in /api/projects/projects-router.js
-// Do NOT `server.listen()` inside this file!
+const server = express()
 
-module.exports = server;
+server.use(cors())
+server.use(express.json())
+server.use(helmet())
+server.use('/api/actions', actionsRouter)
+// server.use('/api/projects/', projectsRouter)
+server.use('*', (req, res) => res.send(`<h2>Remember your why</h2>`))
+
+module.exports = server
