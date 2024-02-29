@@ -2,7 +2,7 @@ repo_name: tdubs42/web-sprint-challenge-build-a-web-api
 report_id: 35f21d97f180ad5840006006aa694e0c
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:06:14+00:00'
+timestamp: '2024-02-29T18:23:37+00:00'
 requested_by: Ladrillo
 provider: github
 branch: main
@@ -85,7 +85,7 @@ tools:
   last_updated_by: Luis Hernandez
   last_updated_on: 2020-08-17 23:37:52.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 6.1.4
   license: MIT
